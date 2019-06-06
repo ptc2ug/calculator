@@ -1,3 +1,4 @@
+import math
 from calculator import CoolCalc
 
 
@@ -28,3 +29,10 @@ def test_div():
     b = 2
     mydiv = coolcalc.divide_a_b(a, b)
     assert mydiv == 4
+
+def test_cos():
+    coolcalc = CoolCalc()
+    a = math.pi/2
+    mycos = coolcalc.cosine_a(a)
+    assert abs(mycos) <= 1e-8
+

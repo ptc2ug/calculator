@@ -1,3 +1,5 @@
+import math
+
 class CoolCalc(object):
     """A simple calculator class"""
     def __init__(self):
@@ -18,3 +20,8 @@ class CoolCalc(object):
     def divide_a_b(self, a, b):
         """Take two numbers and divide a by b"""
         return a / b
+
+    def cosine_a(self, a):
+        """Take cosine of a radians"""
+        return math.cos(a)
+
